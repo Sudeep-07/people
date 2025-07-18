@@ -30,8 +30,9 @@ This project reads a CSV file containing names, ages, and cities of people, and 
 output: 
 
 👶 Youngest Person:
-Name: Diana, Age: 19, City: Berlin
+Name: Lucas, Age: 17, City: Auckland, Country: New Zealand
 
 🧓 Oldest Person:
-Name: George, Age: 75, City: Tokyo
+Name: Arjun, Age: 65, City: Chennai, Country: India
+
 
