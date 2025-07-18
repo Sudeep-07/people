@@ -1,7 +1,7 @@
 import csv
 
-youngest = {"Name": None, "Age": float("inf"), "City": None}
-oldest = {"Name": None, "Age": float("-inf"), "City": None}
+youngest = {"Name": None, "Age": float("inf"), "City": None, "Country": None}
+oldest = {"Name": None, "Age": float("-inf"), "City": None, "Country": None}
 
 with open("people.csv", mode="r") as file:
     reader = csv.DictReader(file)
@@ -10,14 +10,15 @@ with open("people.csv", mode="r") as file:
         name = row["Name"]
         age = int(row["Age"])
         city = row["City"]
+        country = row["Country"]
 
         if age < youngest["Age"]:
-            youngest = {"Name": name, "Age": age, "City": city}
+            youngest = {"Name": name, "Age": age, "City": city, "Country": country}
         if age > oldest["Age"]:
-            oldest = {"Name": name, "Age": age, "City": city}
+            oldest = {"Name": name, "Age": age, "City": city, "Country": country}
 
 print("👶 Youngest Person:")
-print(f"Name: {youngest['Name']}, Age: {youngest['Age']}, City: {youngest['City']}")
+print(f"Name: {youngest['Name']}, Age: {youngest['Age']}, City: {youngest['City']}, Country: {youngest['Country']}")
 
 print("\n🧓 Oldest Person:")
-print(f"Name: {oldest['Name']}, Age: {oldest['Age']}, City: {oldest['City']}")
+print(f"Name: {oldest['Name']}, Age: {oldest['Age']}, City: {oldest['City']}, Country: {oldest['Country']}")

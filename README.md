@@ -10,7 +10,7 @@ This project reads a CSV file containing names, ages, and cities of people, and 
 
 ## 📄 Files
 
-- `people.csv`: Contains the sample data (Name, Age, City)
+- `people.csv`: Contains the sample data (Name, Age, City, Country)
 - `main.py`: Python script to read the CSV and print the oldest and youngest person
 - `README.md`: You're reading it! Contains instructions to run the project
 
